@@ -31,11 +31,14 @@
     align-items: center;
     margin-bottom: 20px;
     padding-left: 40px;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 i{
     font-size: 35px;
     margin-left: 10px;
+    color: rgba(189, 39, 144, 0.507);
 }
 
 .row{
@@ -102,5 +105,37 @@ ul li:before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background: ;
+    background-image: url("./unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    
+}
+
+ul li.checked{
+    color: rgba(185, 50, 185, 0.795);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("./checked.png")
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+ul li span:hover{
+    background:#ff95ff4b;;
+    border-radius: 50%;
+    transition: 0.3s;
 }
