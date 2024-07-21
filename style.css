@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: url(./IMG_0297.jpg);
+    background-size: cover;
+
+}
+
+.todo-app{
+    width: 80%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+i{
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.596);
+    height: 30px;
+}
+
+#input-box{
+    height: 30px;
+    border-radius: 5px;
+    border: 0px solid;
+    padding: 0 30px;
+    padding-right: 80px;
+    background: transparent;
+    flex: 1;
+}
+
+#input-box:focus{
+    outline: 0;
+}
+#add-button{
+    height: 30px;
+    padding: 0 30px;
+    border: white;
+    background: transparent;
+}
+
+#add-button:hover{
+    cursor: pointer;
+    border-radius: 30px;
+    background: #ff95ff4b;
+    padding: 0 40px;
+    transition: 0.3s;
+}
+
+#add-button:hover:after{
+    content: " +";
+    font-size: 15px;
+}
+
+#add-button:active{
+    background: rgba(255, 138, 220, 0.507);
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+ul li:before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: ;
+}
